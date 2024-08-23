@@ -6,7 +6,7 @@ fun main() {
     val deque = ArrayDeque<Int>()
     
     var card = 1
-    for(i in a.size - 1 downTo 0) {
+    for(i in n - 1 downTo 0) {
         when (a[i]) {
             "1" -> {
                 deque.addFirst(card)
