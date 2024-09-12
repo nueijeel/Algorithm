@@ -23,11 +23,6 @@ class Solution {
         zero += str.length - len
         
         // 이진변환
-        var binaryResult = ""
-        while (len > 1) {
-            binaryResult = (len % 2).toString() + binaryResult
-            len /= 2
-        }
-        return "1" + binaryResult
+        return Integer.toBinaryString(len)
     }
 }
