@@ -26,7 +26,7 @@ fun main() {
         for (j in 0 until n) {
             if (!visited[i][j] && graph[i][j] == 1) {
                 complex++
-                dfs(Pair(i,j), direction, n) // 반환값 받아서 apartment리스트에 저장
+                dfs(Pair(i,j), direction, n)
                 apartment.add(apartmentCount)
                 apartmentCount = 0
             }
