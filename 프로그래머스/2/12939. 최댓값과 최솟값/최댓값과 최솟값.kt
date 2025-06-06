@@ -1,5 +1,3 @@
-import kotlin.math.*
-
 class Solution {
     fun solution(s: String): String {
         var list = s.split(" ").map { it.toInt() }
