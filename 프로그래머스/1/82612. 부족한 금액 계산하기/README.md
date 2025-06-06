@@ -1,10 +1,10 @@
 # [level 1] 부족한 금액 계산하기 - 82612 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/82612?language=kotlin) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/82612) 
 
 ### 성능 요약
 
-메모리: 62 MB, 시간: 0.14 ms
+메모리: 64.2 MB, 시간: 0.18 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 06월 05일 13:42:01
+2025년 06월 06일 13:12:19
 
 ### 문제 설명
 

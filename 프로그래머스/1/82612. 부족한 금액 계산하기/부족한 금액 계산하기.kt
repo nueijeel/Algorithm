@@ -1,5 +1,3 @@
-import kotlin.math.*
-
 class Solution {
     fun solution(price: Int, money: Int, count: Int): Long {
         var totalPrice: Long = 0
