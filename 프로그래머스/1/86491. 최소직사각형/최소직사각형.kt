@@ -1,5 +1,3 @@
-import kotlin.math.*
-
 class Solution {
     fun solution(sizes: Array<IntArray>): Int {
         var maxX = 0
