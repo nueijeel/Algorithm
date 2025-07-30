@@ -6,23 +6,24 @@ fun main() = with(System.`in`.bufferedReader()) {
         readLine().toCharArray()
     }
     var repaintSpace = n * m
-    val patterns = arrayOf("WBWBWBWB", "BWBWBWBW")
     
+    // 보드 순회하며 8*8로 자름
     for (i in 0 .. (n - 8)) {
         for (j in 0 .. (m - 8)) {
             var b = 0
             var w = 0
             for (k in i until (8 + i)) {
                 for (l in j until (8 + j)) {
-                    if ((k + l) % 2 == 0) {
+                    if ((k + l) % 2 == 0) { // 보드 x, y 좌표 합이 짝수일때
                         if (board[k][l] == 'W') w++
                         else b++
-                    } else {
+                    } else { // 보드 x, y 좌표 합이 홀수일때
                         if (board[k][l] == 'W') b++
                         else w++
                     }
                 }
             }
+            // 최소값 갱신
             val paint = min(b, w)
             repaintSpace = min(repaintSpace, paint)
         }
