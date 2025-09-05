@@ -55,7 +55,7 @@ jobs:
             git commit -m "chore: Move LeetCode solutions to LeetCode folder"
             # 최신 원격 main 가져와서 rebase
             git pull --rebase origin main
-            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+            git push --force https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
           else
             echo "No changes to commit"
           fi
