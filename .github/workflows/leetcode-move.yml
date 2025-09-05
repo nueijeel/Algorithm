@@ -53,16 +53,8 @@ jobs:
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
             git add -A
             git commit -m "chore: Move LeetCode solutions to LeetCode folder"
+            git pull --rebase https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main
             git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
           else
             echo "No changes to commit"
           fi
-          
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: leetcode-move-${{ github.run_id }}
-          base: main
-          title: "chore: Move LeetCode solutions to LeetCode folder"
-          body: "자동으로 이동된 LeetCode 풀이 폴더입니다."
