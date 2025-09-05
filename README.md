@@ -52,4 +52,8 @@ This is a auto push repository for Baekjoon Online Judge created with [BaekjoonH
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/nueijeel/Algorithm/tree/master/0238-product-of-array-except-self) |
+## Math
+|  |
+| ------- |
+| [3830-find-closest-person](https://github.com/nueijeel/Algorithm/tree/master/3830-find-closest-person) |
 <!---LeetCode Topics End-->
