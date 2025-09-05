@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 2  # 최근 커밋 기록을 가져오기 위해 설정
+          fetch-depth: 0  # 최근 커밋 기록을 가져오기 위해 설정
 
       - name: Move LeetCode solutions
         run: |
@@ -53,7 +53,9 @@ jobs:
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
             git add -A
             git commit -m "chore: Move LeetCode solutions to LeetCode folder"
-            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+            # 최신 원격 main 가져와서 rebase
+            git pull --rebase origin main
+            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
           else
             echo "No changes to commit"
           fi
