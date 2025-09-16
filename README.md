@@ -23,6 +23,7 @@ This is a auto push repository for Baekjoon Online Judge created with [BaekjoonH
 | [0020-valid-parentheses](https://github.com/nueijeel/Algorithm/tree/master/0020-valid-parentheses) |
 | [0076-minimum-window-substring](https://github.com/nueijeel/Algorithm/tree/master/0076-minimum-window-substring) |
 | [0127-word-ladder](https://github.com/nueijeel/Algorithm/tree/master/0127-word-ladder) |
+| [1264-maximum-number-of-words-you-can-type](https://github.com/nueijeel/Algorithm/tree/master/1264-maximum-number-of-words-you-can-type) |
 ## Stack
 |  |
 | ------- |
@@ -40,6 +41,7 @@ This is a auto push repository for Baekjoon Online Judge created with [BaekjoonH
 | ------- |
 | [0076-minimum-window-substring](https://github.com/nueijeel/Algorithm/tree/master/0076-minimum-window-substring) |
 | [0127-word-ladder](https://github.com/nueijeel/Algorithm/tree/master/0127-word-ladder) |
+| [1264-maximum-number-of-words-you-can-type](https://github.com/nueijeel/Algorithm/tree/master/1264-maximum-number-of-words-you-can-type) |
 ## Sliding Window
 |  |
 | ------- |
